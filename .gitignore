@@ -5,3 +5,20 @@
 .DS_Store
 /build
 /captures
+
+.gradle
+
+*.iml
+*.ipr
+*.iws
+out/
+bin/
+gen/
+#os 自动生成的
+Thumbs.db
+# 临时文件
+*.bak
+*.temp
+*.vpp~*
+~*.*
+*.*~
