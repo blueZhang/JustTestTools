@@ -26,12 +26,13 @@ public class MainActivity extends AppCompatActivity {
         button = (Button) findViewById(R.id.button);
         imageView = (ImageView) findViewById(R.id.iamgeView);
         textView = (TextView) findViewById(R.id.textView);
-        animation = AnimationUtils.loadAnimation(this,R.anim.image_animation);
-        imageView.setAnimation(animation);
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.image_animation);
+                imageView.setAnimation(animation);
                 String url = "https://www.baidu.com/img/bdlogo.png";
                 MD5ImageDownload.loadImageFromUrl(getApplicationContext(), url, imageView, 200, 200);
 
